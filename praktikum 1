@@ -1,0 +1,95 @@
+#hitung biaya ongkos berdasarkan jarak tempuh
+jarak = float(input("Masukkan jarak (dalam kilometer): "))
+
+if jarak < 5:
+    print("Biaya ongkos: Rp 10.000")
+elif 5 >= jarak < 15:
+    print("Biaya ongkos: Rp 20.000")
+else:
+    print("Biaya ongkos: Rp 35.000")
+
+#sistem penilaian ujian otomatis
+nilai = float(input("Masukkan nilai ujian: "))
+
+if nilai >= 75:
+    print("Lulus")
+else:
+    print("Tidak Lulus")
+
+#tarif bioskop berdasarkan usia
+usia = int(input("Masukkan usia: "))
+
+if usia < 12:
+    print("Tarif tiket: Rp 25.000")
+elif 12 > usia < 60:
+    print("Tarif tiket: Rp 50.000")
+else:
+    print("Tarif tiket: Rp 30.000")
+
+#pendeteksi suhu tubuh
+suhu = float(input("Masukkan suhu tubuh (dalam derajat celcius): "))
+
+if suhu >= 37.5:
+    print("Suhu Tinggi")
+else:
+    print("Pengunjung lewat")
+
+#wahana roller coster berdasarkan tinggi badan dan usia
+tinggi_badan = float(input("Masukkan tinggi badan (dalam cm): "))
+usia = int(input("Masukkan usia: "))
+
+if tinggi_badan >= 140 and usia >= 10:
+    print("Memenuhi syarat")
+else:
+    print("Tidak memenuhi syarat")
+
+#diskon minimarket
+total_belanja = float(input("Masukkan total belanja: "))
+
+if total_belanja >= 200000:
+    print("Diskon 20%")
+elif total_belanja >= 100000:
+    print("Diskon 10%")
+else:
+    print("Tidak ada diskon")
+
+#sistem AC pintar
+suhu_ruangan = float(input("Masukkan suhu ruangan (dalam derajat celcius): "))
+
+if suhu_ruangan > 30:
+    print("Nyalakan mode penginginan maksimum")
+elif suhu_ruangan > 25:
+    print("Nyalakan mode pendinginan normal")
+else:
+    print("Matikan pendingin")
+
+#sistem atm
+PIN = int(input("Masukan PIN Anda: "))
+
+if PIN == 1234:
+    print("Masukkan jumlah uang yang ingin diambil: ")
+else:
+    print("PIN salah")
+
+#konversi nilai angka ke predikat
+nilai_angka = float(input("Masukan nilai angka: "))
+
+if nilai_angka >= 85:
+    print("Predikat: A")
+elif nilai_angka >= 70:
+    print("Predikat: B")
+elif nilai_angka >= 55:
+    print("Predikat: C")
+else:
+    print("Predikat: D")
+
+#tarif parkir mobil
+lama_parkir = float(input("Masukan lama parkir (dalam jam): "))
+
+if lama_parkir <= 1:
+    print("Tarif parkir: Rp 3.000")
+elif lama_parkir > 1 and lama_parkir <= 5:
+    print("Tarif parkir: Rp 3.000 (durasi-1) x Rp 2.000")
+elif lama_parkir > 5:
+    print("Tarif parkir: Rp 15.000")
+    
